@@ -1,0 +1,45 @@
+body {
+  height: 100vh; /* Set body height to 100% of viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #222; /* Set background color to carbon black */
+}
+
+.remote-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Adjusted to space between */
+  align-items: center;
+  max-width: 700px;
+  background-color: #f5f5f5
+  ; /* Light blue background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-out forwards;
+  user-select: none;
+  padding: 20px; /* Added padding for spacing */
+}
+
+.control-pad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Responsive button layout */
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Add border-radius for rounded shape */
+}
+
+.control-box {
+  background-color: #000; /* Background color for control box changed to carbon black */
+  padding: 10px; /* Added padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded shape */
+}
+
+/* Styles for buttons inside control box */
+.control-box button {
+  margin: 5px; /* Added margin for spacing between buttons */
+  color: white; /* Set text color to white for better visibility on carbon black background */
+}
