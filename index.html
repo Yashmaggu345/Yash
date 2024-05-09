@@ -1,0 +1,25 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Online Remote Car Controller</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+    <div class="remote-container">
+        <div class="camera">
+            <video id="cameraFeed" autoplay></video>
+            <button id="captureBtn">Capture Photo</button>
+        </div>
+
+        <div class="control-pad">
+            <button id="up" class="control-btn">Speed up <i class="fas fa-arrow-up"></i></button>
+            <button id="left" class="control-btn">Move left<i class="fas fa-arrow-left"></i></button>
+            <button id="right" class="control-btn">Move right<i class="fas fa-arrow-right"></i></button>
+            <button id="down" class="control-btn">Move down<i class="fas fa-arrow-down"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
